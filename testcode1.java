@@ -3,7 +3,7 @@ public class testcode1
    public static void main(String[] args)
    {
        double temperature = 70.5;
-       int tvChannel = 101;
+       int tvChannel = 70;
        boolean sunny = true;
 
        System.out.print("Welcome to the weather report on Channel ");
