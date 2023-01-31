@@ -5,7 +5,7 @@ public class testcode1
 
       int i = 0;
       while (i < 10000) {
-        System.out.println(i);
+        System.out.println("thisisatest");
         i++;
       }
 
