@@ -1,15 +1,17 @@
+import java.util.*;
+import java.awt.*;
+
 public class testcode1
 {
-   public static void main(String[] args)
-   {
+  public static void main(String[] args)
+  {
+      World habitat = new World(300,300);
+      Turtle yertle = new Turtle(habitat);
 
-      int i = 0;
-      while (i < 10000) {
-        System.out.println("thisisatest");
-        i++;
-      }
+      yertle.forward();
+      yertle.turnLeft();
+      yertle.forward();
 
-
-   }
+      habitat.show(true);
+  }
 }
-
