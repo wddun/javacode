@@ -24,7 +24,7 @@ public class SimpleTurtle
   private static int numTurtles = 0;
   
   /** array of colors to use for the turtles */
-  private static Color[] colorArray = { Color.green, Color.cyan, new Color(204,0,204), Color.gray};
+  private static Color[] colorArray = { Color.red, Color.cyan, new Color(204,0,204), Color.gray};
   
   /** who to notify about changes to this turtle */
   private ModelDisplay modelDisplay = null;
