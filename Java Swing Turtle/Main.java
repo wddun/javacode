@@ -1,15 +1,17 @@
+import java.util.*;
 import java.awt.*;
 
-public class Main {
-  public static void main(String[] args) {  
-    World world = new World(400,400);
-    Turtle yertle = new Turtle(world);
-    // Add your own code in here 
-    yertle.setColor(Color.blue);
-    yertle.forward();
-    yertle.turnRight();
-    yertle.forward();
-    
-    world.setVisible(true);
+public class Main
+{
+  public static void main(String[] args)
+  {
+      World habitat = new World(300,300);
+      Turtle yertle = new Turtle(habitat);
+
+      yertle.forward();
+      yertle.turnLeft();
+      yertle.forward();
+
+      habitat.show(true);
   }
 }
