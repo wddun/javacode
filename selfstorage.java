@@ -8,7 +8,7 @@ public class selfstorage
         int numCans = scan.nextInt();
         int numDoors = numCans * 5;
         System.out.println("Cans purchased by the manager:" + numCans);
-        System.out.print("# of doors that can be completely painted:" + numDoors);
+        System.out.print(numDoors + " doors can be completely painted.");
     }
 
 }
