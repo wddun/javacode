@@ -13,21 +13,24 @@ public class FlipRace
    //-----------------------------------------------------------------
    public static void main (String[] args)
    {
-      final int GOAL = 3;
+      final int GOAL = 5;
       int count1 = 0, count2 = 0;
 
       // Create two separate coin objects
       Coin coin1 = new Coin();
       Coin coin2 = new Coin();
+      int counter = 0;
 
       while (count1 < GOAL && count2 < GOAL)
       {
          coin1.flip();
+         counter++;
          coin2.flip();
+         counter++;
 
          // Print the flip results (uses Coin's toString method)
          System.out.print ("Coin 1: " + coin1);
-         System.out.println ("   Coin 2: " + coin2);
+         System.out.println ("   Coin 2: " + coin2 +  " " + (counter));
 
          // Increment or reset the counters
          if (coin1.isHeads())
