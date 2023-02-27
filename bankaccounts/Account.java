@@ -29,6 +29,19 @@ public class Account
    }
 
    //-----------------------------------------------------------------
+   //  Overloaded Constructor
+   //Sets up the account by defining its owner, account number,
+   //  and initial balance set to $0.00.
+   //-----------------------------------------------------------------
+   public Account (String owner, int account)
+   {
+      name = owner;
+      acctNumber = account;
+      balance = 0.00;
+   }
+
+
+   //-----------------------------------------------------------------
    //  Validates the transaction, then deposits the specified amount
    //  into the account. Returns the new balance.
    //-----------------------------------------------------------------
