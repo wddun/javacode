@@ -1,3 +1,10 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "selfstorage",
+        "coin",
+        "bankaccounts",
+        "Java Swing Turtle",
+        "playground"
+    ]
 }
