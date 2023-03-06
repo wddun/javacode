@@ -15,6 +15,7 @@ public class playground
             entry = scan.nextInt();
         }
         // assertion: To get to here, last entry MUST be 0
+        System.out.println("You just put in a 0. Program exiting.");
 
     }
     
