@@ -3,9 +3,9 @@
     "java.project.sourcePaths": [
         "selfstorage",
         "playground",
+        "expresscheckout",
         "coin",
         "bankaccounts",
-        "Java Swing Turtle",
-        "expresscheckout"
+        "rationalnumbers"
     ]
 }
