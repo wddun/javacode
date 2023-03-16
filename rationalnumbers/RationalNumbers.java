@@ -33,6 +33,20 @@ public class RationalNumbers
       else
          System.out.println ("r1 and r2 are NOT equal.");
 
+      
+      if (r1.compareTo(r2) < 0)
+      {
+         System.out.println("r1 is less than r2!");
+      }
+      else if (r1.compareTo(r2) > 0)
+      {
+         System.out.println("r1 is greater than r2!");
+      }
+      else 
+      {
+         System.out.println("r1 is equal to r2!");
+      }
+
       r3 = r1.reciprocal();
       System.out.println ("The reciprocal of r1 is: " + r3);
 
