@@ -120,8 +120,13 @@ public class Rational
    //  a positive integer.
    //-----------------------------------------------------------------
 
-public int compareTo 
-
+public int compareTo (Rational op2)
+{
+      int commonDenominator = denominator * op2.getDenominator();
+      int numerator1 = numerator * op2.getDenominator();
+      int numerator2 = op2.getNumerator() * denominator;
+      return numerator1 - numerator2;
+}
    //-----------------------------------------------------------------
    //  Returns this rational number as a string.
    //-----------------------------------------------------------------
