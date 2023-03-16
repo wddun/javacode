@@ -115,6 +115,12 @@ public class Rational
    }
 
    //-----------------------------------------------------------------
+   //  compareTo --> Determines how this rational number compares to the 
+   //  rational number passed as a parameter.Returns a negative, zero, or 
+   //  a positive integer.
+   //-----------------------------------------------------------------
+
+   //-----------------------------------------------------------------
    //  Returns this rational number as a string.
    //-----------------------------------------------------------------
    public String toString ()

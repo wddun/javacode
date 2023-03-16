@@ -2,10 +2,11 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
         "selfstorage",
+        "rationalnumbers",
         "playground",
         "expresscheckout",
         "coin",
         "bankaccounts",
-        "rationalnumbers"
+        "picalculator"
     ]
 }
