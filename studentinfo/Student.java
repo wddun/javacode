@@ -47,13 +47,9 @@ public class Student
        {
            test2 = Score;
        }
-       else if (testNum == 3)
+       else
        {
            test3 = Score;
-       }
-       else 
-       {
-           System.out.print("Invalid input.");
        }
    }
    
