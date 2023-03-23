@@ -89,6 +89,20 @@ public class Account
    }
 
    //-----------------------------------------------------------------
+   //  Take an amount from this account and put the amount in an
+   //  other account. Then, it returns the balance of each account.
+   //-----------------------------------------------------------------
+
+   public double transfer(double amount, Account otherAccount)
+   {
+      // take money from this account, put money in the other 
+      // account, and report this account's new balance.
+      this.withdraw(amount, 0.00);
+      otherAccount.deposit(amount);
+      return this.balance;
+   }
+
+   //-----------------------------------------------------------------
    //  Adds interest to the account and returns the new balance.
    //-----------------------------------------------------------------
    public double addInterest ()
