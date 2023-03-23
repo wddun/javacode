@@ -12,7 +12,7 @@ public class Account
    private NumberFormat fmt = NumberFormat.getCurrencyInstance();
 
    private final double RATE = 0.035;  // interest rate of 3.5%
-
+   private static double totalOnDeposit = 0;  // One storage for all accounts
    private int acctNumber;
    private double balance;
    private String name;
@@ -26,6 +26,7 @@ public class Account
       name = owner;
       acctNumber = account;
       balance = initial;
+      totalOnDeposit += initial;
    }
 
    //-----------------------------------------------------------------
@@ -54,7 +55,10 @@ public class Account
          System.out.println (acctNumber + "  " + fmt.format(amount));
       }
       else
+      {
          balance = balance + amount;
+         totalOnDeposit += amount;
+      }
       return balance;
    }
 
@@ -83,7 +87,10 @@ public class Account
             System.out.println ("Available: " + fmt.format(balance));
          }
          else
+         {
             balance = balance - amount;
+            totalOnDeposit += amount;
+         }
 
       return balance;
    }
@@ -107,6 +114,7 @@ public class Account
    //-----------------------------------------------------------------
    public double addInterest ()
    {
+      totalOnDeposit += (balance * RATE);
       balance += (balance * RATE);
       return balance;
    }
@@ -125,6 +133,24 @@ public class Account
    public int getAccountNumber ()
    {
       return acctNumber;
+   }
+
+   //-----------------------------------------------------------------
+   //  Returns the account name.
+   //-----------------------------------------------------------------
+
+   public String getName()
+   {
+      return name;
+   }
+
+   //-----------------------------------------------------------------
+   //  Returns the total on deposit.
+   //-----------------------------------------------------------------
+   
+   public static double getTotalOnDeposit()
+   {
+      return totalOnDeposit;
    }
 
    //-----------------------------------------------------------------
