@@ -11,12 +11,12 @@ public class Banking
    //-----------------------------------------------------------------
    public static void main (String[] args)
    {
-      /*Account acct1 = new Account ("Ted Murphy", 72354, 1000.00);
+      Account acct1 = new Account ("Ted Murphy", 72354, 1000.00);
       Account acct2 = new Account ("Anita Gomez", 69713, 40.00);
       Account acct3 = new Account ("Sanchit Reddy", 93757, 759.32);
       Account acct4 = new Account("William Dunning", 12431);
 
-      acct1.deposit (25.85);
+      /*acct1.deposit (25.85);
 
 
       double gomezBalance = acct2.deposit (500.00);
