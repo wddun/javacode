@@ -11,7 +11,7 @@ public class Banking
    //-----------------------------------------------------------------
    public static void main (String[] args)
    {
-      Account acct1 = new Account ("Ted Murphy", 72354, 102.56);
+      /*Account acct1 = new Account ("Ted Murphy", 72354, 1000.00);
       Account acct2 = new Account ("Anita Gomez", 69713, 40.00);
       Account acct3 = new Account ("Sanchit Reddy", 93757, 759.32);
       Account acct4 = new Account("William Dunning", 12431);
@@ -49,5 +49,9 @@ public class Banking
       System.out.println (acct2);
       System.out.println (acct3);
       System.out.println (acct4);
+      */
+      acct1.transfer(100, acct2);
+      System.out.println(acct1);
+      System.out.println(acct2);
    }
 }
