@@ -1,7 +1,7 @@
 /** @student.info
- *<BR> Name:
- *<BR> Date:				03-15-2017
- *<BR> Period:				4th
+ *<BR> Name: Will Dunning
+ *<BR> Date:3/24/23				03-15-2017
+ *<BR> Period:	1			4th
  *<BR> Description:			Quiz 04 Stapler Driver
  */
 
@@ -10,7 +10,7 @@ public class Stapler
 
 
 	//********Instance Variables********
-
+    
 
 	//DO NOT ADD, DO NOT CHANGE
 	private int myStaples;		//how many staples in stapler
@@ -25,7 +25,9 @@ public class Stapler
 	//Set to: zero staples, capacity 250, closed.
 	public Stapler()
 	{
-
+        myStaples = 0;
+        myCapacity = 250;
+        myClosed = true;
 
 
 	}
@@ -34,7 +36,9 @@ public class Stapler
 	//provided values.  Assume user will use valid values for all.
 	public Stapler(int staples, int capacity, boolean closed)
 	{
-
+        myStaples = staples;
+        myCapacity = capacity;
+        myClosed = closed;
 
 
 	}
@@ -43,7 +47,9 @@ public class Stapler
 	//from another stapler.  Assume "temp" stapler has valid values.
 	public Stapler(Stapler temp)
 	{
-
+        myStaples = temp.numStaples();
+        myCapacity = temp.getCapacity();
+        myClosed = temp.isClosed();
 
 
 	}
@@ -55,13 +61,13 @@ public class Stapler
 	//Close the stapler
 	public void closeStapler()
 	{
-
+        myClosed = true;
 	}
 
 	//Open the stapler
 	public void openStapler()
 	{
-
+        myClosed = false;
 	}
 
 	//Subtract a single staple.  The stapler can
@@ -70,7 +76,10 @@ public class Stapler
 	//HINT:  Requires one or more IF statements.
 	public void staple()
 	{
-
+        if ((myClosed) && (myStaples > 0))
+        {
+            myStaples -= 1;
+        }
 
 
 
@@ -83,7 +92,17 @@ public class Stapler
 	public void addStaples(int moreStaples)
 	{
 
-
+        if (myClosed == false)
+        {
+            if (moreStaples > (myCapacity - myStaples))
+            {
+                myStaples = myCapacity;
+            }
+            else
+            {
+                myStaples = myStaples + moreStaples;
+            }
+        }
 
 
 
@@ -98,18 +117,18 @@ public class Stapler
 	//returns number of staples
 	public int numStaples()
 	{
-
+        return myStaples;
 	}
 
 	//returns capacity of stapler
 	public int getCapacity()
 	{
-
+        return myCapacity;
 	}
 
 	//returns open/closed status of stapler
 	public boolean isClosed()
 	{
-
+        return myClosed;
 	}
 }
