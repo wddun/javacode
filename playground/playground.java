@@ -1,22 +1,15 @@
-import java.util.Scanner;
 
-public class playground 
+public class playground
 {
-
-    public static void main (String[] args)
-    {
-        Scanner scan = new Scanner(System.in);
-        final int SENTINEL = 0;
-        System.out.print("Enter integer (0 to stop):");
-        int entry = scan.nextInt();
-        while (entry != SENTINEL)
-        {
-            System.out.print("Enter another (0 to stop):");
-            entry = scan.nextInt();
-        }
-        // assertion: To get to here, last entry MUST be 0
-        System.out.println("You just put in a 0. Program exiting.");
-
+    public static void main(String[] args) {
+        int i = 7;         String s = "Be Clever.";
+        System.out.println("BEFORE --->\ti: " + i + "\ts: " + s);
+        tryToChange(i);    tryToChange(s);
+        System.out.println("AFTER ---->\ti: " + i + "\ts: " + s);
     }
     
+    public static void tryToChange(int i) { i = 1000; }
+    
+    public static void tryToChange(String s) { s = "Be Different!"; }
 }
+
