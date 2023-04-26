@@ -14,14 +14,30 @@ public class Academia
    {
       Student Frank = new Student ("Frank", 5);
       StudentAthlete Suki = new StudentAthlete ("Suki", 4, "Soccer");
+      BandMember Will = new BandMember("Will", 6, "Tuba");
+      BandMember Joey = new BandMember("Joey", 3, "Snare");
+      ScholarshipWinner TheOverachiever = new ScholarshipWinner("Andrew", 8, "Soccer", "$3000");
+      ScholarshipWinner Valedictorian = new ScholarshipWinner("Jack", 7, "Baseball", "$5000");
 
       System.out.println (Frank);
       System.out.println ();
 
       System.out.println (Suki);
       System.out.println ();
+      
+      System.out.println (Will);
+      System.out.println ();
 
-      if (! Frank.equals(Suki))
-         System.out.println ("These are two different students.");
+      System.out.println (Joey);
+      System.out.println ();
+      
+      System.out.println (TheOverachiever);
+      System.out.println ();
+
+      System.out.println (Valedictorian);
+      System.out.println ();
+
+      //if (! Frank.equals(Suki))
+      //   System.out.println ("These are two different students.");
    }
 }
