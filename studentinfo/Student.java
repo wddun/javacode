@@ -37,7 +37,9 @@ public class Student
    }   
    
    
-   public void setTestScore(int testNum, int Score)
+   public Student(String string, int i) {
+}
+public void setTestScore(int testNum, int Score)
    {
        if(testNum == 1)
        {
