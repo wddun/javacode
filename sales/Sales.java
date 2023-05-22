@@ -45,6 +45,7 @@ public class Sales
                 minperson = i;
             }
         }
+        
         average = (double)sum / SALESPEOPLE;
         System.out.println("\nTotal sales: " + sum);
         System.out.println("\nAverage sales: " + average);
